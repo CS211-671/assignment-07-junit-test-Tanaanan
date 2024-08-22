@@ -1,5 +1,7 @@
 package ku.cs.models;
 
+import at.favre.lib.crypto.bcrypt.BCrypt;
+
 import java.util.ArrayList;
 
 public class UserList {

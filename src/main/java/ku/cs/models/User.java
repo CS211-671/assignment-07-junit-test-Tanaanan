@@ -25,6 +25,7 @@ public class User {
         this.password = BCrypt.withDefaults().hashToString(12, password.toCharArray());
     }
 
+
     public boolean validatePassword(String password) {
         // more info: https://github.com/patrickfav/bcrypt
         BCrypt.Result result = BCrypt.verifyer().verify(password.toCharArray(), this.password);
