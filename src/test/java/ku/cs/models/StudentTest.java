@@ -23,7 +23,7 @@ class StudentTest {
     }
 
     @Test
-    void TestCalculateGrade(){
+    void testCalculateGrade(){
 //        Student s1 = new Student("6xxxxxxx", "kong", 50);
         s1.addScore(40);
         assertEquals("F", s1.grade());
@@ -38,10 +38,11 @@ class StudentTest {
     }
 
     @Test
-    void TestChangeName(){
+    void testChangeName(){
         s1.changeName("Jatesada");
         assertEquals("Jatesada", s1.getName());
     }
+
 
 
 }
